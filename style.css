@@ -1,0 +1,573 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.barra-nav-izq {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.menu-items {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    font-size: 16px;
+    font-weight: bolder;
+    flex-wrap: wrap;
+}
+
+.barra-nav-izq img {
+    width: 150px;
+    height: 50px;
+    flex-wrap: wrap;
+}
+
+.menu-items li a {
+    text-decoration: none;
+    color: black;
+    flex-wrap: wrap;
+}
+
+.barra-nav-der {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.barra-nav-der a {
+    text-decoration: none;
+    color: black;
+}
+
+.barra-nav-der i {
+    font-size: 20px;
+    padding-bottom: 12px;
+}
+
+.hero {
+    background: linear-gradient(to left, transparent, rgb(66, 60, 53)), url(Images/Hero.jpg);
+    background-size: cover;
+    height: 500px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.hero h1 {
+    display: flex;
+    width: 550px;
+    color: white;
+    font-weight: lighter;
+    font-size: 45px;
+    padding-top: 100px;
+    padding-left: 150px;
+    flex-wrap: wrap;
+}
+
+.Info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Info h2 {
+    font-weight: bolder;
+    font-size: 20px;
+    border: none;
+    width: 700px;
+    text-align: center;
+    align-content: center;
+}
+
+.Info p a {
+    margin-top: 20px;
+    text-decoration: none;
+    color: blue;
+    font-weight: bolder;
+}
+
+.Info p {
+    margin-top: 20px;
+}
+
+.boton-take {
+    background-color: black;
+    border: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.boton-take a {
+    color: white;
+    font-size: 11px;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+.Sub-main h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin-top: 80px;
+}
+
+.Sub-main p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    font-weight: bolder;
+}
+
+.imagen-body {
+    width: 350px;
+    height: 300px;
+}
+
+a img {
+    transition: opacity 0.3s ease;
+}
+
+a:hover img {
+    opacity: 0.7;
+}
+
+.col p {
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+.titulo-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #F2EDE4;
+}
+
+.titulo-formulario h2 {
+    font-weight: bolder;
+    font-size: 40px;
+    margin-top: 80px;
+}
+
+.titulo-formulario p {
+    width: 250px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.formularios {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2EDE4;
+}
+
+.casillas-form,
+input {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.casillas-form input {
+    border: 1px solid #333;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: transparent;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.long-input {
+    height: 100px;
+}
+
+.boton-form {
+    width: 120px;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Media query para navbar (800px o menos) */
+
+@media (max-width: 768px) {
+
+    .barra-nav-izq {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .barra-nav-der {
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .barra-nav-der i {
+        font-size: 24px;
+    }
+
+    .barra-nav-izq img {
+        margin-bottom: 20px;
+    }
+}
+
+.nav-footer {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.nav-footer,
+.menu-items {
+    color: white;
+}
+
+.nav-footer img {
+    width: 150px;
+    height: 50px;
+    flex-wrap: wrap;
+}
+
+.info-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 130px;
+    background-color: black;
+}
+
+.nav-footer li a {
+    font-weight: lighter;
+    color: white;
+}
+
+.info-footer p {
+    color: white;
+}
+
+.nav-footer i {
+    color: white;
+    background-color: transparent;
+    font-size: 24px;
+    padding: 10px;
+}
+
+button:active {
+    transform: scale(0.95);
+    background-color: #333;
+    transition: transform 0.1s ease, background-color 0.1s ease;
+}
+
+
+/* Media query para tablet hero en adelante (800px o menos) */
+
+@media (max-width: 800px) {
+    .hero {
+        background-position: center;
+        height: auto;
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+        width: 100%;
+        padding: 0;
+    }
+
+    .Info h2 {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .Info p a {
+        font-size: 16px;
+    }
+
+    .formularios {
+        width: 100%;
+        text-align: center;
+    }
+
+    .titulo-formulario h2,
+    .titulo-formulario p,
+    .casillas-form {
+        width: 90%;
+        text-align: center;
+    }
+
+    .nav-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .nav-footer img {
+        margin-bottom: 10px;
+    }
+
+    .info-footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Media query para mobil (500px o menos) */
+
+@media (max-width: 500px) {
+    .hero {
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .boton-take {
+        margin-top: 10px;
+    }
+
+    .Info h2 {
+        font-size: 16px;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .Info p {
+        margin-top: 15px;
+    }
+
+    .Info p a {
+        font-size: 14px;
+    }
+
+    .titulo-formulario h2 {
+        font-size: 28px;
+    }
+
+    .titulo-formulario p {
+        font-size: 16px;
+    }
+
+    .casillas-form,
+    .boton-form {
+        width: 90%;
+    }
+
+    .nav-footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .info-footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
+
+/*Diseño para el Pop up*/
+
+.popup {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #F2EDE4;
+    color: black;
+    padding: 20px;
+    width: 700px;
+    height: 250px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px black;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    color: black;
+}
+
+.popup-content h2 {
+    font-size: 35px;
+    color: black;
+    font-weight: bolder;
+    padding: 5px;
+}
+
+.popup-content p {
+    margin: 10px 0;
+    color: green;
+    font-weight: bold;
+}
+
+.form-popup {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-popup {
+    padding: 5px;
+    margin-top: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn-popup {
+    padding: 5px;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    height: 50px;
+    width: 180px;
+}
+
+
+/* Estilos para el Modo Claro/Oscuro */
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* Modo oscuro para barra-nav-izq */
+
+body.dark-mode .barra-nav-izq {
+    color: white;
+}
+
+body.dark-mode .menu-items li a {
+    color: white;
+}
+
+/* Modo oscuro para barra-nav-der (iconos) */
+
+body.dark-mode .barra-nav-der a {
+    color: white;
+}
+
+body.dark-mode .barra-nav-der i {
+    color: white;
+}
+
+/* Modo oscuro para formularios */
+
+body.dark-mode .formularios {
+    background-color: black;
+    color: white;
+}
+
+body.dark-mode .formularios input {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+/* Modo oscuro para boton-form */
+
+body.dark-mode .boton-form {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+body.dark-mode .boton-form:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+body.dark-mode .titulo-formulario {
+    background-color: black;
+    color: white;
+}
+
+body.dark-mode .titulo-formulario p strong {
+    color: white;
+}
+
+
+/* Botones + y - */
+
+.controles-font {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.controles-font button {
+    background-color: #F2EDE4;
+    color: black;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+}
